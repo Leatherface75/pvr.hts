@@ -1,3 +1,12 @@
+3.4.1
+- Fix instant timers
+
+3.4.0
+- Cmake: rename find_package kodi to Kodi
+
+3.3.2
+- Fix includes
+
 3.3.1
 - Fixed a problem with async state handling that could happen when restoring a lost connection to tvheadend.
 
