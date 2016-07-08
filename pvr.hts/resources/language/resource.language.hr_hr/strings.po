@@ -164,38 +164,6 @@ msgctxt "#30361"
 msgid "Record max once per day"
 msgstr "Snimi najviše jednom dnevno"
 
-msgctxt "#30365"
-msgid "1 day"
-msgstr "1 dan"
-
-msgctxt "#30366"
-msgid "%d days"
-msgstr "%d dana"
-
-msgctxt "#30367"
-msgid "1 week"
-msgstr "1 tjedan"
-
-msgctxt "#30368"
-msgid "%d weeks"
-msgstr "%d tjedna"
-
-msgctxt "#30369"
-msgid "1 month"
-msgstr "1 mjesec"
-
-msgctxt "#30370"
-msgid "%d months"
-msgstr "%d mjeseca"
-
-msgctxt "#30371"
-msgid "1 year"
-msgstr "1 godina"
-
-msgctxt "#30372"
-msgid "%d years"
-msgstr "%d godina"
-
 msgctxt "#30373"
 msgid "Until space needed"
 msgstr "Dok ima slobodnog prostora"
@@ -203,6 +171,66 @@ msgstr "Dok ima slobodnog prostora"
 msgctxt "#30374"
 msgid "Forever"
 msgstr "Zauvijek"
+
+msgctxt "#30375"
+msgid "1 day"
+msgstr "1 dan"
+
+msgctxt "#30376"
+msgid "3 days"
+msgstr "3 dana"
+
+msgctxt "#30377"
+msgid "5 days"
+msgstr "5 dana"
+
+msgctxt "#30378"
+msgid "1 week"
+msgstr "1 tjedan"
+
+msgctxt "#30379"
+msgid "2 weeks"
+msgstr "2 tjedna"
+
+msgctxt "#30380"
+msgid "3 weeks"
+msgstr "3 tjedna"
+
+msgctxt "#30381"
+msgid "1 month"
+msgstr "1 mjesec"
+
+msgctxt "#30382"
+msgid "2 months"
+msgstr "2 mjeseca"
+
+msgctxt "#30383"
+msgid "3 months"
+msgstr "3 mjeseca"
+
+msgctxt "#30384"
+msgid "6 months"
+msgstr "6 mjeseca"
+
+msgctxt "#30385"
+msgid "1 year"
+msgstr "1 godina"
+
+msgctxt "#30386"
+msgid "2 years"
+msgstr "2 godine"
+
+msgctxt "#30387"
+msgid "3 years"
+msgstr "3 godine"
+
+msgctxt "#30388"
+msgid "Until space needed (tvh 4.1+)"
+msgstr "Dok ima slobodnog prostora (tvh 4.1+)"
+
+msgctxt "#30389"
+msgid "Forever (tvh 4.1+)"
+msgstr "Zauvijek (tvh 4.1+)"
 
 msgctxt "#30400"
 msgid "Predictive tuning"

@@ -52,6 +52,10 @@ msgctxt "#30008"
 msgid "Advanced settings"
 msgstr "Erweiterte Einstellungen"
 
+msgctxt "#30009"
+msgid "Streaming settings"
+msgstr "Streaming-Einstellungen"
+
 msgctxt "#30010"
 msgid "Timer settings"
 msgstr "Timer-Einstellungen"
@@ -160,38 +164,6 @@ msgctxt "#30361"
 msgid "Record max once per day"
 msgstr "Maximal einmal pro Tag aufnehmen"
 
-msgctxt "#30365"
-msgid "1 day"
-msgstr "1 Tag"
-
-msgctxt "#30366"
-msgid "%d days"
-msgstr "%d Tage"
-
-msgctxt "#30367"
-msgid "1 week"
-msgstr "1 Woche"
-
-msgctxt "#30368"
-msgid "%d weeks"
-msgstr "%d Wochen"
-
-msgctxt "#30369"
-msgid "1 month"
-msgstr "1 Monat"
-
-msgctxt "#30370"
-msgid "%d months"
-msgstr "%d Monate"
-
-msgctxt "#30371"
-msgid "1 year"
-msgstr "1 Jahr"
-
-msgctxt "#30372"
-msgid "%d years"
-msgstr "%d Jahre"
-
 msgctxt "#30373"
 msgid "Until space needed"
 msgstr "Bis Speicherplatz benötigt wird"
@@ -199,6 +171,82 @@ msgstr "Bis Speicherplatz benötigt wird"
 msgctxt "#30374"
 msgid "Forever"
 msgstr "Kein Limit"
+
+msgctxt "#30375"
+msgid "1 day"
+msgstr "1 Tag"
+
+msgctxt "#30376"
+msgid "3 days"
+msgstr "3 Tage"
+
+msgctxt "#30377"
+msgid "5 days"
+msgstr "5 Tage"
+
+msgctxt "#30378"
+msgid "1 week"
+msgstr "1 Woche"
+
+msgctxt "#30379"
+msgid "2 weeks"
+msgstr "2 Wochen"
+
+msgctxt "#30380"
+msgid "3 weeks"
+msgstr "3 Wochen"
+
+msgctxt "#30381"
+msgid "1 month"
+msgstr "1 Monat"
+
+msgctxt "#30382"
+msgid "2 months"
+msgstr "2 Monate"
+
+msgctxt "#30383"
+msgid "3 months"
+msgstr "3 Monate"
+
+msgctxt "#30384"
+msgid "6 months"
+msgstr "6 Monate"
+
+msgctxt "#30385"
+msgid "1 year"
+msgstr "1 Jahr"
+
+msgctxt "#30386"
+msgid "2 years"
+msgstr "2 Jahre"
+
+msgctxt "#30387"
+msgid "3 years"
+msgstr "3 Jahre"
+
+msgctxt "#30388"
+msgid "Until space needed (tvh 4.1+)"
+msgstr "Bis Platz benötigt wird (tvh 4.1+)"
+
+msgctxt "#30389"
+msgid "Forever (tvh 4.1+)"
+msgstr "Ungebrenzt (tvh 4.1+)"
+
+msgctxt "#30400"
+msgid "Predictive tuning"
+msgstr "Voraussagendes Tuning"
+
+msgctxt "#30401"
+msgid "Number of subscriptions to use"
+msgstr "Anzahl zu verwendender Subscriptions"
+
+msgctxt "#30402"
+msgid "Unused subscription close delay (seconds)"
+msgstr "Verzögerung für Schließen nicht benutzter Subscriptions (Sekunden)"
+
+msgctxt "#30403"
+msgid "Use predictive tuning to speedup channel switches"
+msgstr "Voraussagendes Tuning zum Beschleunigen von Kanalwechseln verwenden"
 
 msgctxt "#30450"
 msgid "No free adapter available"
@@ -212,9 +260,29 @@ msgctxt "#30452"
 msgid "No signal"
 msgstr "Kein Signal"
 
+msgctxt "#30453"
+msgid "Tuning failed"
+msgstr "Tuning fehlgeschlagen"
+
+msgctxt "#30454"
+msgid "User limit reached"
+msgstr "Benutzer-Limit erreicht"
+
 msgctxt "#30455"
 msgid "No access"
 msgstr "Kein Zugriff"
+
+msgctxt "#30456"
+msgid "Subscription error"
+msgstr "Subscription-Fehler"
+
+msgctxt "#30500"
+msgid "Streaming profile"
+msgstr "Streaming-Profil"
+
+msgctxt "#30501"
+msgid "Profile to use (empty = default)"
+msgstr "Profil (Leer = Standard)"
 
 msgctxt "#30502"
 msgid "Streaming profile %s is not available"

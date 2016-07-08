@@ -164,38 +164,6 @@ msgctxt "#30361"
 msgid "Record max once per day"
 msgstr "Nagrywaj maksymalnie raz na dzień"
 
-msgctxt "#30365"
-msgid "1 day"
-msgstr "1 dzień"
-
-msgctxt "#30366"
-msgid "%d days"
-msgstr "%d dni"
-
-msgctxt "#30367"
-msgid "1 week"
-msgstr "1 tydzień"
-
-msgctxt "#30368"
-msgid "%d weeks"
-msgstr "%d tygodni"
-
-msgctxt "#30369"
-msgid "1 month"
-msgstr "1 miesiąc"
-
-msgctxt "#30370"
-msgid "%d months"
-msgstr "%d miesięcy"
-
-msgctxt "#30371"
-msgid "1 year"
-msgstr "1 rok"
-
-msgctxt "#30372"
-msgid "%d years"
-msgstr "%d lat"
-
 msgctxt "#30373"
 msgid "Until space needed"
 msgstr "Do zakończenia programu"
@@ -203,6 +171,66 @@ msgstr "Do zakończenia programu"
 msgctxt "#30374"
 msgid "Forever"
 msgstr "Zawsze"
+
+msgctxt "#30375"
+msgid "1 day"
+msgstr "1 dzień"
+
+msgctxt "#30376"
+msgid "3 days"
+msgstr "3 dni"
+
+msgctxt "#30377"
+msgid "5 days"
+msgstr "5 dni"
+
+msgctxt "#30378"
+msgid "1 week"
+msgstr "1 tydzień"
+
+msgctxt "#30379"
+msgid "2 weeks"
+msgstr "2 tygodnie"
+
+msgctxt "#30380"
+msgid "3 weeks"
+msgstr "3 tygodnie"
+
+msgctxt "#30381"
+msgid "1 month"
+msgstr "1 miesiąc"
+
+msgctxt "#30382"
+msgid "2 months"
+msgstr "2 miesiące"
+
+msgctxt "#30383"
+msgid "3 months"
+msgstr "3 miesiące"
+
+msgctxt "#30384"
+msgid "6 months"
+msgstr "6 miesiący"
+
+msgctxt "#30385"
+msgid "1 year"
+msgstr "1 rok"
+
+msgctxt "#30386"
+msgid "2 years"
+msgstr "2 lata"
+
+msgctxt "#30387"
+msgid "3 years"
+msgstr "3 lata"
+
+msgctxt "#30388"
+msgid "Until space needed (tvh 4.1+)"
+msgstr "Do momentu, gdy braknie przestrzeni (tvh 4.1+)"
+
+msgctxt "#30389"
+msgid "Forever (tvh 4.1+)"
+msgstr "Bez końca (tvh 4.1+)"
 
 msgctxt "#30400"
 msgid "Predictive tuning"
