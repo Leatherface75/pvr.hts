@@ -69,14 +69,16 @@ extern "C" {
  * Configuration defines
  */
 #define HTSP_MIN_SERVER_VERSION       (19) // Server must support at least this htsp version
-#define HTSP_CLIENT_VERSION           (25) // Client uses HTSP features up to this version. If the respective
+#define HTSP_CLIENT_VERSION           (26) // Client uses HTSP features up to this version. If the respective
                                            // addon feature requires htsp features introduced after
                                            // HTSP_MIN_SERVER_VERSION this feature will only be available if the
                                            // actual server HTSP version matches (runtime htsp version check).
 #define FAST_RECONNECT_ATTEMPTS     (5)
 #define FAST_RECONNECT_INTERVAL   (500) // ms
+#define SLOW_RECONNECT_INTERVAL  (5000) // ms
 #define UNNUMBERED_CHANNEL      (10000)
 #define INVALID_SEEKTIME           (-1)
+#define SPEED_NORMAL             (1000) // x1 playback speed
 
 /*
  * Forward decleration of classes
@@ -239,6 +241,7 @@ public:
   bool   ProcessMessage ( const char *method, htsmsg_t *m );
   void   Connected      ( void );
 
+  bool IsTimeShifting() const;
   bool IsRealTimeStream() const;
   int64_t GetTimeshiftTime() const;
   int64_t GetTimeshiftBufferStart() const;
@@ -257,7 +260,7 @@ private:
   mutable P8PLATFORM::CMutex              m_mutex;
   CHTSPConnection                        &m_conn;
   P8PLATFORM::SyncedBuffer<DemuxPacket*>  m_pktBuffer;
-  PVR_STREAM_PROPERTIES                   m_streams;
+  std::vector<PVR_STREAM_PROPERTIES::PVR_STREAM> m_streams;
   std::map<int,int>                       m_streamStat;
   int64_t                                 m_seekTime;
   P8PLATFORM::CCondition<volatile int64_t>  m_seekCond;
@@ -279,7 +282,7 @@ private:
   void         Trim           ( void );
   void         Flush          ( void );
   void         Abort          ( void );
-  bool         Seek           ( int time, bool backwards, double *startpts );
+  bool         Seek           ( double time, bool backwards, double *startpts );
   void         Speed          ( int speed );
   void         Weight         ( tvheadend::eSubscriptionWeight weight );
   PVR_ERROR    CurrentStreams ( PVR_STREAM_PROPERTIES *streams );
@@ -371,6 +374,9 @@ public:
                                 int *num );
   PVR_ERROR DeleteRecording   ( const PVR_RECORDING &rec );
   PVR_ERROR RenameRecording   ( const PVR_RECORDING &rec );
+  PVR_ERROR SetPlayCount      ( const PVR_RECORDING &rec, int playcount );
+  PVR_ERROR SetPlayPosition   ( const PVR_RECORDING &rec, int playposition );
+  int GetPlayPosition         ( const PVR_RECORDING &rec );
   PVR_ERROR GetTimerTypes     ( PVR_TIMER_TYPE types[], int *size );
   int       GetTimerCount     ( void );
   PVR_ERROR GetTimers         ( ADDON_HANDLE handle );
@@ -541,13 +547,14 @@ public:
   DemuxPacket *DemuxRead           ( void );
   void         DemuxFlush          ( void );
   void         DemuxAbort          ( void );
-  bool         DemuxSeek           ( int time, bool backward, double *startpts );
+  bool         DemuxSeek           ( double time, bool backward, double *startpts );
   void         DemuxSpeed          ( int speed );
   PVR_ERROR    DemuxCurrentStreams ( PVR_STREAM_PROPERTIES *streams );
   PVR_ERROR    DemuxCurrentSignal  ( PVR_SIGNAL_STATUS &sig );
   int64_t      DemuxGetTimeshiftTime() const;
   int64_t      DemuxGetTimeshiftBufferStart() const;
   int64_t      DemuxGetTimeshiftBufferEnd() const;
+  bool         DemuxIsTimeShifting() const;
   bool         DemuxIsRealTimeStream() const;
 
   /*

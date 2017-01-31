@@ -42,7 +42,7 @@ msgstr "Salasana"
 
 msgctxt "#30006"
 msgid "Connection timeout (seconds)"
-msgstr "Yhteyden aikakatkaisu (sekunneissa)"
+msgstr "Yhteyden aikakatkaisu (sekuntia)"
 
 msgctxt "#30007"
 msgid "Response timeout (seconds)"
@@ -58,23 +58,43 @@ msgstr "Suoratoistoasetukset"
 
 msgctxt "#30010"
 msgid "Timer settings"
-msgstr "Ajastimen asetukset"
+msgstr "Ajastuksen asetukset"
 
 msgctxt "#30050"
 msgid "Auto recordings"
 msgstr "Automaattiset tallennukset"
 
+msgctxt "#30051"
+msgid "Start time window calculation"
+msgstr "Aloitusajan määrittely"
+
+msgctxt "#30052"
+msgid "Strict (start time + end time)"
+msgstr "Tarkka (aloitusaika + lopetusaika)"
+
+msgctxt "#30053"
+msgid "Relaxed (start time +/- margin)"
+msgstr "Joustava (aloitusaika +/- marginaali)"
+
+msgctxt "#30054"
+msgid "Maximum start time margin (minutes)"
+msgstr "Aloitusajan enimmäismarginaali (minuuttia)"
+
 msgctxt "#30055"
 msgid "Default priority"
-msgstr "Oletustärkeys"
+msgstr "Tärkeys"
 
 msgctxt "#30056"
 msgid "Default lifetime"
-msgstr "Oletuselinikä"
+msgstr "Elinikä"
+
+msgctxt "#30057"
+msgid "Default duplicate detection"
+msgstr "Kaksoiskappaleiden tunnistus"
 
 msgctxt "#30058"
 msgid "Defaults for new timers"
-msgstr "Uusien ajastimien oletus"
+msgstr "Ajastusten oletusasetukset"
 
 msgctxt "#30100"
 msgid "Data transfer"
@@ -82,11 +102,11 @@ msgstr "Tiedonsiirto"
 
 msgctxt "#30101"
 msgid "Asynchronous EPG transfer"
-msgstr "Epäsynkrooninen EPG-siirto"
+msgstr "Epäsynkroninen ohjelmaoppaan lataus"
 
 msgctxt "#30200"
 msgid "Debugging"
-msgstr "Debugging"
+msgstr "Virhelokin kirjoitus"
 
 msgctxt "#30201"
 msgid "Trace (detailed)"
@@ -94,7 +114,11 @@ msgstr "Jäljitä (yksityiskohtainen)"
 
 msgctxt "#30300"
 msgid "HTSP version mismatch (supported: v%d, required: v%d). Please update tvheadend."
-msgstr "HTSP versio yhteensopimaton (tuettu: v%d, vaadittu: v%d). Ole hyvä ja päivitä tvheadend."
+msgstr "HTSP-versio on yhteensopimaton (tuettu: v%d, vaadittu: v%d). Ole hyvä ja päivitä tvheadend."
+
+msgctxt "#30350"
+msgid "One Time (Scheduled by repeating timer)"
+msgstr "Yksittäinen (Ajastettu toistuvalla ajastimella)"
 
 msgctxt "#30351"
 msgid "Important (Highest)"
@@ -120,6 +144,26 @@ msgctxt "#30356"
 msgid "Record all episodes"
 msgstr "Tallenna kaikki jaksot"
 
+msgctxt "#30357"
+msgid "Record if episode number differs"
+msgstr "Tallenna, jos jakson numero on erilainen"
+
+msgctxt "#30358"
+msgid "Record if episode name differs"
+msgstr "Tallenna, jos jakson nimi on erilainen"
+
+msgctxt "#30359"
+msgid "Record if description differs"
+msgstr "Tallenna, jos kuvaus on erilainen"
+
+msgctxt "#30360"
+msgid "Record max once per week"
+msgstr "Tallenna korkeintaan kerran viikossa"
+
+msgctxt "#30361"
+msgid "Record max once per day"
+msgstr "Tallenna korkeintaan kerran päivässä"
+
 msgctxt "#30373"
 msgid "Until space needed"
 msgstr "Kunnes tarvetta lisätilalle"
@@ -132,21 +176,81 @@ msgctxt "#30375"
 msgid "1 day"
 msgstr "1 päivä"
 
+msgctxt "#30376"
+msgid "3 days"
+msgstr "3 päivää"
+
+msgctxt "#30377"
+msgid "5 days"
+msgstr "5 päivää"
+
 msgctxt "#30378"
 msgid "1 week"
 msgstr "1 viikko"
+
+msgctxt "#30379"
+msgid "2 weeks"
+msgstr "2 viikkoa"
+
+msgctxt "#30380"
+msgid "3 weeks"
+msgstr "3 viikkoa"
 
 msgctxt "#30381"
 msgid "1 month"
 msgstr "1 kuukausi"
 
+msgctxt "#30382"
+msgid "2 months"
+msgstr "2 kuukautta"
+
+msgctxt "#30383"
+msgid "3 months"
+msgstr "3 kuukautta"
+
+msgctxt "#30384"
+msgid "6 months"
+msgstr "6 kuukautta"
+
 msgctxt "#30385"
 msgid "1 year"
 msgstr "1 vuosi"
 
+msgctxt "#30386"
+msgid "2 years"
+msgstr "2 vuotta"
+
+msgctxt "#30387"
+msgid "3 years"
+msgstr "3 vuotta"
+
+msgctxt "#30388"
+msgid "Until space needed (tvh 4.1+)"
+msgstr "Kunnes tarvitaan lisätilaa (tvh 4.1+)"
+
+msgctxt "#30389"
+msgid "Forever (tvh 4.1+)"
+msgstr "Ikuisesti (tvh 4.1+)"
+
 msgctxt "#30400"
 msgid "Predictive tuning"
 msgstr "Ennakoiva viritys"
+
+msgctxt "#30401"
+msgid "Number of subscriptions to use"
+msgstr "Käytettävien tilausten määrä"
+
+msgctxt "#30402"
+msgid "Unused subscription close delay (seconds)"
+msgstr "Viive tilaamattoman maksukanavan sulkemiselle (sekuntia)"
+
+msgctxt "#30403"
+msgid "Use predictive tuning to speedup channel switches"
+msgstr "Käytä ennakoivaa kanavanvaihtoa"
+
+msgctxt "#30450"
+msgid "No free adapter available"
+msgstr "Yhtään viritintä ei ole vapaana"
 
 msgctxt "#30451"
 msgid "Scrambled channel"
